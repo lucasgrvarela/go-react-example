@@ -21,7 +21,7 @@ func main() {
 	}
 
 	http.HandleFunc("/api/items", getItems)
-	log.Fatal(http.ListenAndServe(":8080", addCorsHeaders(http.DefaultServeMux)))
+	log.Fatal(http.ListenAndServe(":9999", addCorsHeaders(http.DefaultServeMux)))
 }
 
 func getItems(w http.ResponseWriter, r *http.Request) {
